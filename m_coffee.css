@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+.gnb_area {
+    display: none;
+    position: relative;
+}
+header {
+    position: relative;
+    height: 80px;
+    margin: 0 auto;
+}
+header .logo {
+    position: absolute;
+    line-height: 80px;
+    top: 40px; left: 20px;
+    height: 80px;
+}
+/* gnb 메뉴 만들기 */
+.btn_search {
+    display: none;
+}
+.btn_menu {
+    display: block;
+    position: absolute;
+    top: 40px; right: 25px;
+}
+.gnb_area {
+    background: #ffffff;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 80px; left: 0;
+}
+.gnb_area ul {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    line-height: 20px;
+}
+.gnb_area > ul > li > a {
+    position: relative;
+    color: #11316c;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.gnb_area > ul > li > a:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #11316c;
+    position: absolute;
+    top: 35px; left: -25px;
+}
+
+/* 메인배경 & 텍스트 */
+.main_bg {height: 60vh;}
+.main_bg .main_title h2 {font-size: 25px;}
+.main_bg .main_title span {font-size: 35px;}
+
+/* 사진 4장 */
+.bean_list > li {
+    width: 100%;
+}
+.bean_list > li figure {
+    width: 95%;
+    height: 250px;
+}
+
+/* 사진 밑 글 */
+.bean .bean_list .title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.bean_list .btn_view {
+    padding: 10px 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 마지막 사진 텍스트 */
+.intro_bg .intro_text {
+    text-align: right;
+}
+.intro_bg .intro_text h2 {
+    font-size: 40px;
+}
+.intro_bg .intro_text strong {
+    font-size: 30px;
+}
+
+/* 맨 밑 자세히보기 */
+.btn_view {
+    padding: 10px 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* footer */
+footer .bot {
+    font-size: 10px;
+}
+footer img {
+    width: 80px;
+}
+
+
+@media screen and (max-width:400px) {
+    header .logo img{
+        width: 180px;
+    }
+    .main_bg .main_title h2 {
+        line-height: 1.7;
+        font-size: 20px;
+    }
+    .main_bg .main_title h2 span {
+        font-size: 45px;
+    }
+    .main_bg .main_title strong {
+        font-size: 18px;
+    }
+    .main_bg .main_title p {
+        font-size: 13px;
+    }
+    .main_bg {
+        height: 55vh;
+    }
+    .bean .bean_list .text {
+        font-size: 15px;
+    }
+
+    /* footer */
+    footer .bot {
+        padding: 20px 15px;
+        font-size: 10px;
+    }
+    footer .left_text,
+    footer .right_text {
+        display: none;
+    }
+
+    /* gnb */
+    .btn_search {
+        display: none;
+    }
+    .btn_menu {
+        display: block;
+        position: absolute;
+        top: 40px; right: -25px;
+    }
+    .gnb_area {
+        background: #ffffff;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        top: 80px; left: 0;
+    }
+    .gnb_area ul {
+        display: block;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    .gnb_area > ul > li > a {
+        position: relative;
+        color: #ccc;
+        font-weight: 500;
+        margin-left: 50px;
+    }
+    .gnb_area > ul > li > a:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ccc;
+        position: absolute;
+        top: 35px; left: -25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn_search {
+        display: none;
+    }
+    .btn_menu {
+        display: block;
+        position: absolute;
+        top: 40px; right: -25px;
+    }
+    .gnb_area {
+        background: #ffffff;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        top: 80px; left: 0;
+    }
+    .gnb_area ul {
+        display: block;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    .gnb_area > ul > li > a {
+        position: relative;
+        color: #11316c;
+        font-weight: 500;
+        margin-left: 50px;
+    }
+    .gnb_area > ul > li > a:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #11316c;
+        position: absolute;
+        top: 35px; left: -25px;
+    }
+}

@@ -1,0 +1,246 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(all.min.css);
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section .inner {
+   max-width: 1200px;
+}
+header .inner {
+    max-width: 1400px;
+}
+header {
+    position: relative;
+    height: 80px;
+    top: 0; left: 0;
+}
+
+header .logo {
+    position: absolute;
+    width: 100%;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+}
+
+/* gnb_area */
+.gnb_area {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.gnb_area > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.gnb_area > ul > li > a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #5a5a5a;
+}
+.gnb_area > ul > li > a:hover {
+    color: #234a97;
+}
+
+/* 돋보기 */
+.btn_search {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    color: #11316c;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.btn_menu {
+    display: none;
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    color: #11316c;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* main_bg */
+.main_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/main_bg.jpg) no-repeat center/cover;
+    height: 80vh;
+}
+.main_bg .main_title {
+    text-align: center;
+}
+.main_bg .main_title h2 {
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    color: #eee;
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.main_bg .main_title h2 span {
+    font-size: 60px;
+    font-weight: 800;
+}
+.main_bg .main_title strong{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.main_bg .main_title p {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* SECTION BEAN */
+.bean {
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+.bean h2 { /* 제목 */
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+}
+.bean .inner > span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* 커피사진 4장 */
+
+.bean .bean_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bean_list > li {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+.bean_list > li figure {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: url(../img/bean1.png.jpg) no-repeat center/cover;
+}
+.bean_list > li .img_bean02 {background-image: url(../img/bean2.png.jpg);}
+.bean_list > li .img_bean03 {background-image: url(../img/bean3.png.jpg);}
+.bean_list > li .img_bean04 {background-image: url(../img/bean4.jpg);}
+
+/* 사진 밑 text */
+.bean .bean_list .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bean_list .btn_view {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #000;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.bean_list .btn_view:hover {
+    background: #11316c;
+    color: #fff;
+}
+
+/* intro_bg */
+.intro_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background: url(../img/intro_bg.jpg) no-repeat center/cover;
+}
+.intro_bg .intro_text {
+    max-width: 1400px;
+    color: #fff;   
+}
+.intro_bg .intro_text h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.intro_bg .intro_text strong {
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/* shop */
+.bean .inner img {
+    width: 100%;
+    height: 300px;
+}
+.btn_view {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 50px;
+    color: #000;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 5px;
+
+}
+.btn_view:hover {
+    background: #11316c;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    margin-top: 100px;
+    background: #eee;
+}
+footer .bot {
+    font-size: 14px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    line-height: 1.7;
+}
+footer .bot span {
+    display: block;
+}
+footer .bot .left_text span,
+footer .bot .right_text span{
+    color: #363636;
+    font-weight: 600;
+}
